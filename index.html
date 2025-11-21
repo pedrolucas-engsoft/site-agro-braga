@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+
+    <title>Agro Braga - Sua loja agropecuária</title>
+
+    <link rel="icon" href="./assets/favicon-16x16.png" type="image/png">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            (function (d, script) {
+                script = d.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = 'https://w.app/widget-v1/v1Q2kN.js';
+                d.getElementsByTagName('head')[0].appendChild(script);
+            }(document));
+        };
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Início Cabeçalho -->
+    <header class="cabecalho">
+
+        <!-- Início Menu hamburguer -->
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburger container__icone"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#sobre" class="lista-menu__link">Sobre</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#local" class="lista-menu__link">Local</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#contato" class="lista-menu__link">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Fim Menu hamburguer -->
+
+        <!-- Logotipo Agro Braga -->
+        <div class="cabecalho__logo">
+            <a href="#" class="cabecalho__logo-icone"><img src="./assets/logo-agro-braga.svg"
+                    alt="Logotipo Agro Braga"></a>
+        </div>
+        <!-- Fim Logotipo Agro Braga -->
+
+    </header>
+    <!-- Fim Cabeçalho -->
+
+    <!-- Início Slides -->
+    <section class="slides">
+        <!--Início SwiperJS-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="./assets/slide-swiper-apresentacao-desktop.webp">
+
+                        <img src="./assets/slide-swiper-apresentacao.webp" alt="Slide apresentando a empresa">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="./assets/slide-swiper-entregas-desktop.webp">
+
+                        <img src="./assets/slide-swiper-entregas.webp" alt="Slide sobre as entregas da empresa">
+                    </picture>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--Fim SwiperJS-->
+    </section>
+    <!-- Fim Slides -->
+
+    <!-- Início Conteúdo Principal da Página -->
+
+    <!-- Início Quem Somos -->
+    <section class="quem-somos" id="sobre">
+
+        <div class="quem-somos-escritos">
+            <h2 class="quem-somos-titulo">Quem<br>somos?</h2>
+            <p class="quem-somos-texto">Somos a Agro Braga, sua parceira de confiança em Rosário da Limeira. Há mais
+                de 18 anos, oferecemos as melhores marcas de rações e produtos agropecuários com a qualidade que
+                você já conhece e o atendimento próximo que só uma loja local pode oferecer.</p>
+        </div>
+
+        <div class="quem-somos-imagem">
+            <img src="./assets/imagem-section-1.webp" alt="Imagem da fachada da loja">
+        </div>
+
+    </section>
+    <!-- Fim Quem Somos -->
+
+    <!-- Início Onde Estamos -->
+    <section class="onde-estamos" id="local">
+
+        <div class="onde-estamos-escritos">
+            <h2 class="onde-estamos-titulo">Onde<br>estamos?</h2>
+            <p class="onde-estamos-texto">Estamos localizados em Rosário da Limeira,
+                próximo à praça da cidade, e será
+                um prazer te atender!</p>
+        </div>
+
+        <div class="onde-estamos-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.3177829790898!2d-42.51442092304846!3d-20.979894980657175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbcb5f7683a6857%3A0x8d74a1856e6a76b6!2sAgro%20Braga!5e0!3m2!1spt-BR!2sbr!4v1763341279419!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+    <!-- Fim Onde Estamos -->
+
+    <!-- Início Entre em Contato -->
+    <section class="entre-em-contato" id="contato">
+
+        <div class="entre-em-contato-escritos">
+            <h2 class="entre-em-contato-titulo">Entre em<br>contato</h2>
+            <p class="entre-em-contato-texto">Evite filas e economize tempo. Faça seu
+                pedido diretamente pelo WhatsApp:</p>
+            <a href="https://w.app/v1q2kn" class="entre-em-contato-link">
+                <img src="./assets/icone-whatsapp.svg" alt="Ícone do WhatsApp">
+                WhatsApp
+            </a>
+        </div>
+
+        <div class="entre-em-contato-imagem">
+            <img src="./assets/imagem-section-3.webp" alt="Imagem de um celular">
+        </div>
+
+    </section>
+    <!-- Fim Entre em Contato -->
+
+    <!-- Fim Conteúdo Principal da Página -->
+
+    <!-- Início Rodapé -->
+    <footer class="rodape">
+
+        <div class="rodape__principais">
+            <ul class="lista__redes-sociais">
+                <li class="lista__redes-item">
+                    <a href="https://www.instagram.com/agrobraga29?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="lista__rodape-link">
+                        <img src="./assets/icone-instagram.svg" alt="Logotipo Instagram">
+                        <span class="lista__rodape-texto">Instagram</span>
+                    </a>
+                </li>
+                <li class="lista__redes-item">
+                    <a href="https://www.facebook.com/profile.php?id=61566854808013&ref=pl_edit_ig_profile_ac"
+                        class="lista__rodape-link">
+                        <img src="./assets/icone-facebook.svg" alt="Facebook">
+                        <span class="lista__rodape-texto">Mercado Livre</span>
+                    </a>
+                </li>
+            </ul>
+            <img class="rodape__logo-icone" src="./assets/logo-agro-braga.svg" alt="Logotipo Agro Braga">
+        </div>
+
+        <div class="desenvolvedor">
+            <p class="escrito__desenvolvedor">Desenvolvido por</p>
+            <img class="logo__peduluca" src="./assets/logo-peduluca.svg" alt="Logotipo peduluca">
+        </div>
+
+    </footer>
+    <!-- Fim Rodapé -->
+
+    <!-- Início JavaScript SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- Fim JavaScript SwiperJS -->
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+/* Layout Celular */
+.onde-estamos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.onde-estamos-titulo {
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--verde-escuro);
+    margin-bottom: 1rem;
+}
+
+.onde-estamos-texto {
+    color: var(--verde-escuro);
+    line-height: 1.2rem;
+}
+
+.onde-estamos-mapa {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.onde-estamos-mapa iframe {
+    width: 20rem; 
+    height: 20rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+/* Layout Celular */
+
+/* Layout Tablet */
+@media (min-width: 1024px) {
+    .onde-estamos {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        gap: 5rem; 
+        padding: 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .onde-estamos-escritos {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .onde-estamos-titulo {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        line-height: 1.1;
+    }
+
+    .onde-estamos-texto {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        text-align: left; 
+    }
+
+    .onde-estamos-mapa {
+        width: 45%; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .onde-estamos-mapa iframe {
+        width: 25rem;
+        height: 20rem;
+    }
+}
+/* Layout Tablet */
+
+/* Layout Desktop */
+@media (min-width: 1728px) {
+    
+    .onde-estamos {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        max-width: 1600px; /* Largura expandida para telas grandes */
+        gap: 6rem; 
+        padding: 6rem 4rem; 
+        margin: 0 auto;
+    }
+
+    .onde-estamos-escritos {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Mantém tudo alinhado na esquerda */
+        text-align: left;
+    }
+
+    .onde-estamos-titulo {
+        font-size: 5rem; /* Título grande igual ao 'Quem Somos' */
+        margin-bottom: 3rem;
+        line-height: 1;
+    }
+
+    .onde-estamos-texto {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 600px; /* Evita que a linha de leitura fique muito longa */
+        text-align: left;
+    }
+
+    .onde-estamos-mapa {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .onde-estamos-mapa iframe {
+        width: 35rem;  /* Mesma largura da imagem do PC anterior */
+        height: 28rem; /* Mapa bem visível e proporcional */
+    }
+}
+/* Layout Desktop */

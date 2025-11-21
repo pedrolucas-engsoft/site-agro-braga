@@ -1,0 +1,107 @@
+/* Layout Celular */
+.rodape {
+    background-image: var(--verde-degrade);
+}
+
+.rodape__principais {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 3rem;
+}
+
+.rodape__logo-icone {
+    width: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lista__redes-sociais {
+    list-style: none;
+    padding-left: 1rem;
+    z-index: 5;
+    display: flex;
+    gap: 1rem;
+}
+
+.lista__redes-item img {
+    width: 1.5rem;
+    height: auto;
+}
+
+.lista__rodape-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.lista__rodape-texto {
+    display: none;
+    font-size: 0.8rem;
+}
+
+.desenvolvedor {
+    background-color: var(--verde-medio);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.escrito__desenvolvedor {
+    font-size: 0.9rem;
+}
+
+.logo__peduluca {
+    width: 5rem;
+    padding-left: 0.5rem;
+}
+/* Layout Celular */
+
+/* Layout Tablet */
+@media (min-width: 1024px) {
+    
+    .rodape__principais {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        min-height: 5.5rem;
+    }
+
+    .lista__redes-sociais {
+        padding-left: 0; 
+    }
+
+    .lista__redes-item img {
+        width: 1.8rem;
+        height: auto;
+    }
+    
+    .rodape__logo-icone {
+        width: 7rem; 
+    }
+}
+
+/* Layout Desktop */
+@media (min-width: 1728px) {
+    
+    .rodape__logo-icone {
+        width: 9rem;
+    }
+
+    .lista__redes-item img {
+        width: 2rem;
+        height: auto;
+    }
+
+    .rodape__principais {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        min-height: 8rem;
+    }
+}
+/* Layout Desktop */

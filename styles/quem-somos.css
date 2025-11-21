@@ -1,0 +1,112 @@
+/* Layout Celular */
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.quem-somos-titulo {
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--verde-escuro);
+    margin-bottom: 1rem;
+}
+
+.quem-somos-texto {
+    color: var(--verde-escuro);
+    line-height: 1.2rem;
+}
+
+.quem-somos-imagem img {
+    width: 20rem;
+}
+/* Layout Celular */
+
+/* Layout Tablet */
+@media (min-width: 1024px) {
+    .quem-somos {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding: 4rem;
+        max-width: 1200px; 
+        margin: 0 auto;
+        text-align: left; 
+    }
+
+    .quem-somos-escritos {
+        width: 45%;
+    }
+
+    .quem-somos-titulo {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .quem-somos-texto {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .quem-somos-imagem {
+        width: 45%;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .quem-somos-imagem img {
+        width: 25rem;
+    }
+}
+/* Layout Tablet */
+
+/* Layout Desktop */
+@media (min-width: 1728px) {
+    
+    .quem-somos {
+        flex-direction: row;   
+        align-items: center; 
+        justify-content: center; 
+        max-width: 1600px; 
+        gap: 6rem; 
+        padding: 6rem 4rem; 
+        margin: 0 auto;
+    }
+
+    .quem-somos-escritos {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .quem-somos-titulo {
+        font-size: 5rem; 
+        margin-bottom: 3rem;
+        line-height: 1;
+    }
+
+    .quem-somos-texto {
+        font-size: 1.5rem; 
+        line-height: 2rem;
+        max-width: 600px; 
+    }
+
+    .quem-somos-imagem {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quem-somos-imagem img {
+        width: 35rem; 
+    }
+}
+/* Layout Desktop */

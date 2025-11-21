@@ -1,0 +1,155 @@
+/* Layout Celular */
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: var(--verde-degrade);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__icone {
+    padding: 1rem;
+}
+
+.cabecalho__menu-hamburger {
+    width: 1.0rem;
+    height: 1.0rem;
+    background-image: url("../assets/icone-menu-hamburguer.svg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 40vw;
+    z-index: 10;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1rem;
+    background-image: var(--verde-degrade);
+    color: var(--creme);
+}
+
+.lista-menu__link {
+    color: var(--creme);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cabecalho__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cabecalho__logo-icone img {
+    height: 2.2rem;
+    width: auto;
+}
+/* Layout Celular */
+
+/* Layout Tablet */
+@media (min-width: 1024px) {
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 4rem; 
+    }
+
+    .cabecalho__logo {
+        position: static !important;  
+        transform: none !important; 
+        order: 1; 
+    }
+    .container {
+        order: 2; 
+    }
+    
+    .cabecalho__menu-hamburger, .container__botao, label[for="menu"] {
+        display: none !important; 
+    }
+
+    .lista-menu {
+        display: flex;     
+        position: static;  
+        width: auto;       
+        flex-direction: row; 
+        gap: 1.5rem;       
+    }
+
+    .lista-menu__item {
+        background-image: none; 
+        padding: 0;
+    }
+
+    .cabecalho__logo-icone img {
+        padding: 0.5rem;
+    }   
+
+    /* Efeitos visuais(hover)*/
+    .cabecalho__logo-icone img {
+        transition: transform 0.3s ease;
+    }
+
+    .cabecalho__logo-icone:hover img {
+        transform: scale(0.9);
+    }
+
+    .lista-menu__link {
+        position: relative; 
+        padding-bottom: 1x; 
+    }
+
+    .lista-menu__link::after {
+        content: ''; 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: var(--creme); 
+        width: 0;
+        transition: width 0.3s ease-out;
+    }
+
+    .lista-menu__link:hover::after {
+        width: 100%;
+    }
+
+
+}
+/* Layout Tablet */
+
+/* Layout Desktop */
+@media (min-width: 1728px) {
+    .cabecalho {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+}
+/* Layout Desktop */

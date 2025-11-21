@@ -1,0 +1,120 @@
+/* fontes utilizadas */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*arquivos css linkados*/
+@import url(./styles/cabecalho.css);
+@import url(./styles/slides.css);
+@import url(./styles/quem-somos.css);
+@import url(./styles/onde-estamos.css);
+@import url(./styles/entre-em-contato.css);
+@import url(./styles/rodape.css);
+
+/* variaveis */
+:root {
+    /*fontes*/
+    --fonte-principal: "Heebo", sans-serif;
+    --fonte-secundaria: "Playfair Display", serif;
+
+    /*cores*/
+    --verde-degrade: linear-gradient(90deg,rgba(8, 95, 27, 1) 0%, rgba(55, 145, 60, 1) 30%, rgba(8, 95, 27, 1) 70%, rgba(55, 145, 60, 1) 100%);
+    --verde-escuro: #085F1B;
+    --verde-medio: #54B359;
+    --verde-claro: #B4E092;
+    --creme: #E5D2A7;
+    --branco: #FFFFFF;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("./assets/fundo-site.webp");
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 6rem;
+}
+
+@media (max-width: 1024px) {
+    #wa-widget-send-button {
+        transform: scale(0.7); /* Diminui para 70% */
+        transform-origin: bottom right;
+    }
+}
+
+/* =================================================
+   LAYOUT "4K" / ULTRA-WIDE (2560px+)
+   ================================================= */
+@media (min-width: 1920px) {
+
+    /* --- Carrousel --- */
+    .mySwiper {
+        height: 50rem; 
+    }
+
+    /* --- Cabeçalho --- */
+    .cabecalho {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    /* --- Seções de conteúdo --- */
+    .quem-somos,
+    .onde-estamos,
+    .entre-em-contato {
+        max-width: 2200px; 
+        gap: 8rem;
+        padding: 8rem 6rem;
+    }
+
+    /* --- Títulos --- */
+    .quem-somos-titulo,
+    .onde-estamos-titulo,
+    .entre-em-contato-titulo {
+        font-size: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    /* --- Textos --- */
+    .quem-somos-texto,
+    .onde-estamos-texto,
+    .entre-em-contato-texto {
+        font-size: 2rem; 
+        line-height: 2.8rem;
+        max-width: 800px; 
+    }
+
+    /* --- Imagens e Mapas --- */
+    .quem-somos-imagem img,
+    .onde-estamos-mapa iframe,
+    .entre-em-contato-imagem img {
+        width: 50rem;
+    }
+
+    .onde-estamos-mapa iframe {
+        height: 35rem;
+    }
+
+    /* --- Botão de Contato --- */
+    .entre-em-contato-link {
+        font-size: 2.2rem;
+        padding: 0.8rem 0.1rem;
+    }
+
+    /* --- Rodapé--- */
+    .rodape__principais {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .rodape__logo-icone {
+        width: 10rem;
+    }
+
+    .lista__redes-item img {
+        width: 2.4rem;
+    }
+}

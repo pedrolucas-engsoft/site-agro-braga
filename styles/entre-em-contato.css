@@ -1,0 +1,169 @@
+/* Layout Celular */
+.entre-em-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.entre-em-contato-titulo {
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--verde-escuro);
+    margin-bottom: 1rem;
+}
+
+.entre-em-contato-texto {
+    color: var(--verde-escuro);
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.entre-em-contato-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 0.22rem solid var(--verde-escuro);
+    color: var(--verde-escuro);
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.entre-em-contato-link img {
+    width: 2rem;
+    height: auto;
+}
+
+.entre-em-contato-imagem img {
+    width: 20rem;
+}
+/* Layout Celular */
+
+/* Layout Tablet */
+@media (min-width: 1024px) {
+    .entre-em-contato {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding: 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .entre-em-contato-escritos {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        text-align: left;
+    }
+
+    .entre-em-contato-titulo {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        line-height: 1.1;
+    }
+
+    .entre-em-contato-texto {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .entre-em-contato-link {
+        margin: 0;
+    }
+
+    .entre-em-contato-imagem {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .entre-em-contato-imagem img {
+        width: 25rem;
+    }
+
+    /* Efeitos visuais(hover)*/
+
+    .entre-em-contato-link:hover {
+        background-color: var(--verde-escuro);
+        color: var(--branco);                  
+        border-color: var(--verde-escuro);
+        transform: scale(1.10); 
+        box-shadow: 0 5px 15px rgba(42, 104, 40, 0.3); 
+    }
+
+    .entre-em-contato-link:hover img {
+        filter: brightness(0) invert(1);
+    }
+
+}
+/* Layout Tablet */
+
+/* Layout Desktop */
+@media (min-width: 1728px) {
+    
+    .entre-em-contato {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        max-width: 1600px;
+        gap: 6rem;
+        padding: 6rem 4rem;
+        margin: 0 auto;
+    }
+
+    .entre-em-contato-escritos {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .entre-em-contato-titulo {
+        font-size: 5rem; 
+        line-height: 1;
+        margin-bottom: 3rem;
+    }
+
+    .entre-em-contato-texto {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 600px;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    .entre-em-contato-link {
+        font-size: 2.2rem;
+        padding: 0.8rem 0.8rem;
+        margin: 0;
+        width: 15vw;
+    }
+
+    .entre-em-contato-imagem {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .entre-em-contato-imagem img {
+        width: 35rem;
+    }
+
+}
+/* Layout Desktop */
